@@ -1,13 +1,21 @@
 {
   "name": "makerlog-cli",
   "version": "0.0.1",
-  "description": "",
+  "description": "An unofficial CLI for interacting with Makerlog. Written in Typescript.",
   "main": "./build/cli.js",
+  "bin": {
+    "makerlog": "./build/cli.js"
+  },
   "scripts": {
     "build": "tsc",
+    "watch": "tsc --watch",
     "makerlog": "node ./build/cli.js"
   },
-  "author": "",
+  "keywords": [
+    "makerlog",
+    "cli"
+  ],
+  "author": "Max Diamond @dmdboi",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.15",
