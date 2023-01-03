@@ -2,14 +2,13 @@
   "name": "makerlog-cli",
   "version": "0.0.1",
   "description": "An unofficial CLI for interacting with Makerlog. Written in Typescript.",
-  "main": "./build/cli.js",
+  "main": "./build/src/cli.js",
   "bin": {
-    "makerlog": "./build/cli.js"
+    "makerlog": "./build/src/cli.js"
   },
   "scripts": {
     "build": "tsc",
-    "watch": "tsc --watch",
-    "makerlog": "node ./build/cli.js"
+    "watch": "tsc --watch"
   },
   "keywords": [
     "makerlog",

@@ -11,4 +11,5 @@ yargs(hideBin(process.argv))
   .wrap(yargs.terminalWidth())
   .help("help", "List of available Makerlog commands")
   .strict()
+  .scriptName("makerlog")
   .alias({ h: "help" }).argv;

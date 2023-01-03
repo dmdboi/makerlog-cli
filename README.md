@@ -17,3 +17,20 @@ makerlog tasks add --name 'Name of task' --status 'to-do/in-progress/done'
 // List your last 10 tasks
 makerlog tasks list
 ```
+
+## Installation
+
+```bash
+git clone https://github.com/dmdboi/makerlog-cli
+npm ci
+npx tsc
+npm i -g
+```
+
+This will install Makerlog as a global command line tool  
+
+Test it out with:  
+
+```bash
+makerlog
+```
