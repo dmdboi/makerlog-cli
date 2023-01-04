@@ -22,7 +22,7 @@ export async function handler(argv: Arguments<Options>) {
   try {
     await setAxiosAuth();
 
-    const user = await makerlog.showCurrentUser();
+    const user = await makerlog.getUserProfile();
 
     console.log(chalk.green("-----------------------------------"));
     console.log(chalk.bold.green("Username"), `   : ${user.username} - ${user.streak} 🔥`);

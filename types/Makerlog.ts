@@ -57,11 +57,45 @@ export interface Task {
   video: string;
 }
 
+export interface Notification {
+  id: number;
+  key: string;
+  read: boolean;
+  verb: string;
+  recipient: User;
+  actor: User;
+  target_type: string;
+  target: Task;
+  obj_type: string;
+  obj: {
+    id: number;
+    object_id: number;
+    content_type: number;
+    user: User;
+    content: string;
+    created_at: Date;
+  };
+  broadcast_link: string;
+  created: Date;
+}
+
 /**
  *
  * API Requests & Responses
  *
  */
+
+export interface ListNotificationsResponse {
+  count: number;
+  next: string;
+  previous: string;
+  results: Notification[];
+}
+
+export interface MarkAllReadNotificationResponse {
+  success: boolean;
+  count: number;
+}
 
 export interface ListTasksResponse {
   count: number;

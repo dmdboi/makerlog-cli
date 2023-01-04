@@ -11,11 +11,23 @@ makerlog login --username [username] --password [password]
 // See your current user info
 makerlog user
 
-// Add a task to Makerlog
-makerlog tasks add --name 'Name of task' --status 'to-do/in-progress/done'
+// Add a completed task to Makerlog
+makerlog done 'Name of task'
+
+// Add an in-progress task to Makerlog
+makerlog inprogress 'Name of task'
+
+// Add a task todo to Makerlog
+makerlog todo 'Name of task'
+
+// Show unread notifications
+makerlog notifications list
+
+// Mark all unread notifications as read
+makerlog notifications read
 
 // List your last 10 tasks
-makerlog tasks list
+makerlog tasks
 ```
 
 ## Installation
@@ -27,9 +39,9 @@ npx tsc
 npm i -g
 ```
 
-This will install Makerlog as a global command line tool  
+This will install Makerlog as a global command line tool
 
-Test it out with:  
+Test it out with:
 
 ```bash
 makerlog
